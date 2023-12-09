@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name  -->
+    <title>M D K | P R O F I L E </title>
+
+    <!-- Title logo link -->
+    <link rel="shortcut icon" sizes="32x32" href="./Title_logo.png" />
+
+    <!-- font awesome style sheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="profile">
+        <div class="box">
+            <div class="icons">
+                <li>
+                    <a href="https://www.facebook.com/people/Dinesh-Kumar/100040063323431/" target="_blank"><span
+                            class="fab fa-facebook-f"></span></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mdk_here_official/" target="_blank"><span
+                            class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                    <a href="https://wa.me//919787943467" target="_blank"><span class="fab fa-whatsapp"></span></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/mdkdinesh2503" target="_blank"><span
+                            class="fab fa-linkedin-in"></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/mdkdinesh2503" target="_blank"><span class="fab fa-github"></span></a>
+                </li>
+            </div>
+            <div class="ic">
+                <div class="images">
+                    <a href="#"><img src="./mdk.jpg" alt="" /></a>
+                </div>
+                <div class="content">
+                    <div class="title"> Dinesh Kumar M </div>
+                    <div class="pla">
+                        <p> Namakkal </p>
+                    </div>
+                    <p class="highlight">Full Stack Developer</p><p>mdkdinesh2503@gmail.com</p>
+                    <div class="buttons">
+                        <div class="btns">
+                            <button><a href="https://mdkdinesh2503.github.io/dk/" target="_blank">Read More <span class="fas fa-caret-square-right"></span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+
+    /*----------------------------------------------------------------------
+                            OVERALL STYLE STARTS HERE                         
+     ----------------------------------------------------------------------*/
+
+    :root {
+        --white: #fff;
+        --brown: #414141;
+        --light-brown: #b2a9a9;
+        --border: .1rem solid var(--brown);
+        --light-border: .2rem solid var(--brown);
+        --bold-border: .4rem solid var(--white);
+        --text-shadow: .1rem .1rem .1rem var(--brown);
+        --box-shadow: 0px 2px 20px 2px var(--white);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    html {
+        min-width: 100%;
+        min-height: 100vh;
+        place-items: center;
+        overflow-x: hidden;
+        background: var(--light-brown);
+    }
+
+    .profile {
+        max-width: 538px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .profile .box {
+        height: 500px;
+        width: 400px;
+        margin: 20% auto;
+        transition: all 0.5s ease-in-out;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: 5px;
+        padding: 5px;
+        border: var(--light-border);
+    }
+
+    .profile .ic img {
+        position: absolute;
+        z-index: 20;
+        border-radius: 50%;
+        display: block;
+        height: 200px;
+        width: 200px;
+        border: var(--border);
+        object-fit: cover;
+        margin: 20px auto;
+        margin-top: -200px;
+        margin-left: 6rem;
+        transition: all 0.3s ease;
+    }
+
+    .profile:hover .ic img.active {
+        height: 460px;
+        width: 370px;
+        margin: 1.5rem auto;
+        margin-top: -220px;
+        margin-left: 10px;
+        border-radius: 15px;
+    }
+
+    .ic .content {
+        color: var(--brown);
+        font-size: 17px;
+        margin-top: 10px;
+        padding: 1px 20px 10px 20px !important;
+    }
+
+    .ic .content .title {
+        color: var(--brown);
+        text-shadow: var(--text-shadow);
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .ic .content .pla p {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .ic .content p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .ic .content .highlight {
+        color: var(--brown);
+        font-weight: bold;
+    }
+
+    .content .buttons {
+        display: flex;
+    }
+
+    .buttons .btns {
+        height: 40px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .buttons .btns button {
+        height: 100%;
+        width: 100%;
+        background: var(--brown);
+        border: var(--border);
+        outline: none;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    .buttons .btns button a {
+        color: var(--white);    
+    }
+
+    .buttons .btns button a:hover {
+        color: var(--brown);    
+    }
+
+    .btns button:hover {
+        transform: scale(0.95);
+        background: var(--white);
+    }
+
+    .btns button span {
+        line-height: .8;
+    }
+
+    .box .icons {
+        margin-left: 10px;
+        list-style: none;
+        position: relative;
+    }
+
+    .box .icons li {
+        height: 40px;
+        width: 40px;
+        margin: 5px 0;
+        opacity: 0;
+        margin-left: -50px;
+        transition: all 0.5s ease;
+    }
+
+    .box:hover .icons li {
+        opacity: 1;
+        margin-left: 7px;
+    }
+
+    .box:hover .icons li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .box:hover .icons li:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    .box:hover .icons li:nth-child(4) {
+        transition-delay: 0.6s;
+    }
+
+    .box:hover .icons li:nth-child(5) {
+        transition-delay: 0.8s;
+    }
+
+    .box .icons li a {
+        color: var(--white);
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        background: var(--brown);
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .box .icons li a span {
+        margin-top: 12px;
+    }
+
+    .box .icons li a:hover {
+        transform: scale(0.9);
+    }
+
+    @media (max-width:400px) {
+        .profile .box {
+            height: 400px;
+            width: 300px;
+            margin: 10% auto;
+            padding: 4px;
+        }
+
+        .profile .ic img {
+            height: 170px;
+            width: 170px;
+            margin-top: -150px;
+            margin-left: 4rem;
+        }
+
+        .profile:hover .ic img.active {
+            height: 360px;
+            width: 270px;
+            margin-top: -150px;
+        }
+
+        .ic .content {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .ic .content .title {
+            font-size: 25px;
+            line-height: 10px;
+        }
+
+        .box .icons li {
+            height: 25px;
+            width: 25px;
+        }
+
+        .box .icons li a {
+            height: 100%;
+            width: 100%;
+            font-size: .8rem;
+            line-height: 2.2;
+        }
+
+        .box .icons li a span {
+            margin-top: 5px;
+        }
+    }
+
+</style>
+
+<script>
+
+    /*--------- Image Hover ---------- */
+    const img = document.querySelector("img");
+    const icons = document.querySelector(".icons");
+    img.onclick = function () {
+        this.classList.toggle("active");
+        icons.classList.toggle("active");
+    };
+
+    /*--------- Ctrl button lock ---------- */
+    document.onkeydown = function (e) {
+        if (e.ctrlKey) {
+            return false;
+        }
+    };
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+</html>
