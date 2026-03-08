@@ -11,7 +11,6 @@ This project is a minimal, self-contained profile/portfolio card. All markup, st
 ```
 profilecard/
 ├── index.html      # Single file: HTML, CSS, and JS
-├── mdk.jpg         # Profile photo
 ├── Title_logo.png  # Favicon (browser tab icon)
 └── README.md       # This file
 ```
